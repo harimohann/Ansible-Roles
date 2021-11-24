@@ -17,7 +17,7 @@
     docker_container:
       image: harry452/hariwebapp:latest
       name: hariwebapp
-      state: present
+      state: started
       pull: yes
       ports:
         - 9000:8080
