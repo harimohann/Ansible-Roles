@@ -16,7 +16,7 @@
   - name: Running the container
     docker_container:
       image: harry452/hariwebapp:latest
-      name: webapp
+      name: hariwebapp
       # path: docker
       state: started
       pull: yes
