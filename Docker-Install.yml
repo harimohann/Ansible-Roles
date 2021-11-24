@@ -9,7 +9,6 @@
   - name: Installing Docker Prerequisite packages
     yum:
       name: ['yum-utils', 'device-mapper-persistent-data', 'lvm2']
-      update_cache=yes
       state: latest
       
   - name: Upgrade yum
