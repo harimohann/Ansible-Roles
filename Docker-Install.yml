@@ -1,5 +1,6 @@
 ---
 - name: Install docker
+  remote_user: ansible
   gather_facts: No
   hosts: all
   become: yes
