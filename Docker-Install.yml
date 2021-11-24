@@ -14,7 +14,6 @@
   - name: Upgrade yum
     yum:
       name: upgrade
-      update_cache=yes
       state: latest
 
   - name: Add Docker repo
