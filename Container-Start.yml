@@ -14,13 +14,13 @@
     pip: name=docker-py
 
   - name: Running the container
-      docker_container:
-        image: harry452/hariwebapp:latest
-        name: hariwebapp
-        state: present
-        pull: yes
-        ports:
-          - 9000:8080
+    docker_container:
+      image: harry452/hariwebapp:latest
+      name: hariwebapp
+      state: present
+      pull: yes
+      ports:
+        - 9000:8080
 
   - name: Check if container is running
     shell: docker ps
