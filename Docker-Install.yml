@@ -9,11 +9,13 @@
   - name: Installing Docker Prerequisite packages
     yum:
       name: ['yum-utils', 'device-mapper-persistent-data', 'lvm2']
+      update_cache=yes
       state: latest
       
   - name: Upgrade yum
     yum:
       name: upgrade
+      update_cache=yes
       state: latest
 
   - name: Add Docker repo
@@ -25,6 +27,7 @@
   - name: Install Docker
     yum:
       name: ['docker-ce', 'docker-ce-cli', 'containerd.io']
+      update_cache=yes
       state: latest
     become: yes
 
