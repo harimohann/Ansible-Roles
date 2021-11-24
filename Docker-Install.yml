@@ -19,7 +19,7 @@
 
   - name: Install Docker
     yum:
-      name: docker-ce
+      name: ['docker-ce', 'docker-ce-cli', 'containerd.io']
       state: latest
     become: yes
 
