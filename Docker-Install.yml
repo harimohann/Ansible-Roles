@@ -10,6 +10,11 @@
     yum:
       name: ['yum-utils', 'device-mapper-persistent-data', 'lvm2']
       state: latest
+      
+  - name: Upgrade yum
+    yum:
+      name: upgrade
+      state: latest
 
   - name: Add Docker repo
     get_url:
