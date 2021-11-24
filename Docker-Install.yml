@@ -8,12 +8,8 @@
   tasks:
   - name: Installing Docker Prerequisite packages
     yum:
-    - name: "{{ item }}"
+      name: ['yum-utils', 'device-mapper-persistent-data', 'lvm2']
       state: latest
-    with_items:
-    - "yum-utils"
-    - "device-mapper-persistent-data"
-    - "lvm2"
 
   - name: Add Docker repo
     get_url:
