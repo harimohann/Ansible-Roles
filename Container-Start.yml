@@ -16,9 +16,9 @@
   - name: Running the container
     docker_container:
       image: harry452/hariwebapp
-      name: hariwebapp
+      name: hariwebapp1
       # path: docker
-      state: latest
+      state: present
       pull: yes
       ports:
         - 9000:8080
